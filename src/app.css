@@ -80,3 +80,8 @@
 .ml-auto {
   margin-left: auto;
 }
+
+.primary-dark {}
+.primary-dark:hover {
+  border-bottom-color: #003A91 !important;
+}

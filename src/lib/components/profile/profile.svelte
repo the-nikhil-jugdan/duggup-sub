@@ -1,0 +1,32 @@
+<script>
+	import * as Avatar from '$lib/components/ui/avatar';
+	import { Button } from '$lib/components/ui/button';
+
+</script>
+
+<div class="flex gap-12 items-center px-12 lg:px-20 xl:px-24 2xl:px-36 max-w-7xl mt-20">
+	<div>
+		<Avatar.Root class="ml-4 border-2 flex flex-col justify-center items-center"
+								 style="height: 120px; width: 120px; border-color: #EAEFF5">
+			<Avatar.Image alt="@shadcn" src="/assets/krishna.png" />
+			<Avatar.Fallback>NJ</Avatar.Fallback>
+		</Avatar.Root>
+		<p class="text-center w-full text-secondary font-bold text-2xl">
+			Krishna <br />Kiran
+		</p>
+	</div>
+	<div>
+		<p class="text-sm text-black">
+			Co-Founder and CEO at Duggup - Social network for people in tech. Ex-Amazon Head of Engineering. I write
+			hot-takes on building a business, shipping delightful products and accelerating product and career growth.
+		</p>
+		<Button class="mt-8 hover:bg-primary hover:text-white hover:border-primary primary-dark"
+						variant="ctaButton">Followed
+		</Button>
+	</div>
+	<div class="flex flex-col items-end gap-0" style="width: 30%;">
+		<img alt="Duggup Logo" src="/assets/duggup-logo.svg" style="height: 36px; width: 36px;" />
+		<span class="text-black font-bold">Duggup</span>
+		<span class="text-gray text-sm">Co-Founder and CEO</span>
+	</div>
+</div>
