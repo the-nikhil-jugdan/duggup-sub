@@ -2,6 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as Avatar from '$lib/components/ui/avatar';
 
+	export let profile;
 </script>
 
 <nav class="w-full flex items-center py-4 border-b border-dotted">
@@ -29,10 +30,10 @@
 
 	<Button class="flex gap-2" variant="navLink">
 		<Avatar.Root class="ml-4 border border-secondary">
-			<Avatar.Image alt="@shadcn" src="/assets/krishna.png" />
+			<Avatar.Image alt="@shadcn" src="{profile.profileImage}" />
 			<Avatar.Fallback>NJ</Avatar.Fallback>
 		</Avatar.Root>
-		<span class="text-lg text-secondary">Krishna Kiran</span>
+		<span class="text-lg text-secondary">{profile.name}</span>
 		<img alt="Open Menu" src="/assets/caret-down.svg" />
 	</Button>
 </nav>
