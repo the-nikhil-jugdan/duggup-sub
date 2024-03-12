@@ -3,6 +3,7 @@
 	import { Button } from '$lib/components/ui/button';
 
 	export let profile;
+	let following = false;
 </script>
 
 <div class="flex gap-12 items-center px-12 lg:px-20 xl:px-24 2xl:px-36 max-w-7xl mt-20">
@@ -21,7 +22,8 @@
 			{profile.about.bio}
 		</p>
 		<Button class="mt-8 hover:bg-primary hover:text-white hover:border-primary primary-dark"
-						variant="ctaButton">Followed
+						on:click={() => following = !following } variant="ctaButton">
+			{#if following}Following{:else}Follow{/if}
 		</Button>
 	</div>
 	<div class="flex flex-col items-end gap-0" style="width: 30%;">
